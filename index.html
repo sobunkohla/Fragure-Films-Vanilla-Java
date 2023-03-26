@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fragure Films</title>
     <script src="./nav.js" defer></script>
-    <script src="./index.js" defer></script>
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
@@ -22,50 +21,42 @@
         <ul class="nav__link--list">
           <li>
             <a
-              href="./intro.html"
-              class="nav__link--anchor animation__underline"
+              href="./index.html"
+              class="nav__link--anchor animation__underline "
               >Home</a
             >
           </li>
           <li>
-            <a href="#" class="nav__link--anchor animation__underline click"
+            <a
+              href="#"
+              class="nav__link--anchor animation__underline click "
               >Contact</a
             >
           </li>
           <li>
             <a
-              href="./index.html"
-              class="nav__link--anchor nav__link--primary animation__underline"
+              href="./movies.html"
+              class="nav__link--anchor nav__link--primary animation__underline "
               >Movies</a
             >
           </li>
         </ul>
         <div class="menu">
-          <button
-            class="menu__button menu__button--open click"
-            onclick="menuOpen()"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
+          <button class="menu__button menu__button--open click " onclick="menuOpen()" ><i class="fas fa-bars"></i></button>
           <div class="menu__background">
-            <button
-              class="menu__button menu__button--close click"
-              onclick="menuClose()"
-            >
-              <i class="fas fa-times"></i>
-            </button>
+            <button class="menu__button menu__button--close click" onclick="menuClose()"><i class="fas fa-times"></i></button>
             <ul class="menu__link--list">
               <li class="menu__link">
                 <a
-                  onclick="menuClose()"
-                  href="./intro.html"
+                onclick="menuClose()"
+                  href="./index.html"
                   class="menu__link--anchor animation__underline text-gradient"
                   >Home</a
                 >
               </li>
               <li class="menu__link">
                 <a
-                  onclick="menuClose()"
+                onclick="menuClose()"
                   href="#"
                   class="menu__link--anchor animation__underline click text-gradient"
                   >Contact</a
@@ -73,9 +64,9 @@
               </li>
               <li class="menu__link">
                 <a
-                  onclick="menuClose()"
-                  href="./index.html"
-                  class="menu__link--anchor animation__underline text-gradient"
+                onclick="menuClose()"
+                  href="./movies.html"
+                  class="menu__link--anchor  animation__underline text-gradient"
                   >Movies</a
                 >
               </li>
@@ -86,57 +77,119 @@
       <header>
         <div class="container">
           <div class="row header__row">
-            <div class="head">
-              <h1 class="Header--title">
-                Browse Our <span class="text-gradient">Movies</span>
-              </h1>
-              <div class="search">
-                <input type="text" value="" class="search--input" />
-                <button class="search--button click pointer"
-                onclick="movieSearch()">
-                  <i class="fas fa-search"></i>
-                </button>
-              </div>
-            </div>
-            <h2 class="Search-result--text">Search results for  "<span class="search-result text-gradient"></span>"</h2>
+            <h1 class="Header--title">
+              An escape to <span class="text-gradient">Remember</span>
+            </h1>
+            <p class="Header--para">
+              Make sure you capture every sweet moment with high-end
+              <span class="text-gradient">streaming services</span>
+            </p>
+            <a href="./movies.html">
+              <button class="Header--button click pointer" >
+              Search <i class="fas fa-search header"></i>
+            </button>
+          </a>
 
-            <div class="search__movies">
-                <i class="fas fa-spinner"></i>
+            <div class="movie__list">
+              <div class="movie">
+                <figure class="movie__img--wrapper">
+                  <img
+                    src="https://www.washingtonpost.com/graphics/2019/entertainment/oscar-nominees-movie-poster-design/img/black-panther-web.jpg"
+                    class="movie__img"
+                  />
+                </figure>
+                <div class="movie__info">
+                  <h3 class="movie--title">Black Panther</h3>
+                  <h5 class="movie--subtitle">Marvel, Movie</h5>
+                  <p class="movie--para">
+                    An African style Marvel Action packed special with a new
+                    take on an african...
+                  </p>
+                </div>
+              </div>
+              <div class="movie">
+                <figure class="movie__img--wrapper">
+                  <img
+                    src="https://assets-prd.ignimgs.com/2022/01/13/uncharted-poster-full-1642086040683.jpg"
+                    class="movie__img"
+                  />
+                </figure>
+                <div class="movie__info">
+                  <h3 class="movie--title">Uncharted</h3>
+                  <h5 class="movie--subtitle">Playstation, Movie</h5>
+                  <p class="movie--para">
+                    Join Drake on this action packed adventure to uncharted
+                    territories with this...
+                </div>
+              </div>
+              <div class="movie">
+                <figure class="movie__img--wrapper">
+                  <img
+                    src="https://media.comicbook.com/2017/10/iron-man-movie-poster-marvel-cinematic-universe-1038878.jpg"
+                    class="movie__img"
+                  />
+                </figure>
+                <div class="movie__info">
+                  <h3 class="movie--title">Iron Man</h3>
+                  <h5 class="movie--subtitle">Marvel, Movie</h5>
+                  <p class="movie--para">
+                    An Action packed Marvel movie where we dive deep into the
+                    origins of our beloved...
+                  </p>
+                </div>
+              </div>
+              <div class="movie">
+                <figure class="movie__img--wrapper">
+                  <img
+                    src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-movie-poster-template-design-0f5fff6262fdefb855e3a9a3f0fdd361_screen.jpg"
+                    class="movie__img"
+                  />
+                </figure>
+                <div class="movie__info">
+                  <h3 class="movie--title">Freedom</h3>
+                  <h5 class="movie--subtitle">Action, Thriller, Movie</h5>
+                  <p class="movie--para">
+                    what happens when you kidnap the daughter of a former navy
+                    seal and assassin after...
+                  </p>
+                </div>
+              </div>
+              <div class="movie">
+                <figure class="movie__img--wrapper">
+                  <img
+                    src="https://m.media-amazon.com/images/M/MV5BZjE2ZWIwMWEtNGFlMy00ZjYzLWEzOWEtYzQ0MDAwZDRhYzNjXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg"
+                    class="movie__img"
+                  />
+                </figure>
+                <div class="movie__info">
+                  <h3 class="movie--title">Smile</h3>
+                  <h5 class="movie--subtitle">Horror, Thriller, Movie</h5>
+                  <p class="movie--para">
+                    make sure your doors are locked before it's your turn in
+                    this Horrendous story of an evil...
+                  </p>
+                </div>
+              </div>
+              <div class="movie">
+                <figure class="movie__img--wrapper">
+                  <img
+                    src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/adventure-movie-poster-template-design-7b13ea2ab6f64c1ec9e1bb473f345547_screen.jpg"
+                    class="movie__img"
+                  />
+                </figure>
+                <div class="movie__info">
+                  <h3 class="movie--title">Archer</h3>
+                  <h5 class="movie--subtitle">Action ,Thriller , Movie</h5>
+                  <p class="movie--para">
+                    A fan of Lara Croft? then you wouldn't want to miss action
+                    packed, suspense dense thriller with...
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </header>
     </section>
-    <footer>
-      <div class="row footer__row">
-        <figure class="logo__img--wrapper footer__img--wrapper">
-          <img src="./assets/logo.png" alt="" class="logo__img" />
-        </figure>
-        <ul class="footer__link--list">
-          <li class="footer__link">
-            <a
-              href="./intro.html"
-              class="footer__link--anchor animation__underline animation__underline--white"
-              >Home</a
-            >
-          </li>
-          <li class="footer__link">
-            <a
-              href="#"
-              class="footer__link--anchor animation__underline animation__underline--white"
-              >Contact</a
-            >
-          </li>
-          <li class="footer__link">
-            <a
-              href="./index.html"
-              class="footer__link--anchor nav__link--primary animation__underline animation__underline--white"
-              >Movies</a
-            >
-          </li>
-        </ul>
-        <p class="copyright">copyright ©️ fragure films 20203</p>
-      </div>
-    </footer>
   </body>
 </html>
