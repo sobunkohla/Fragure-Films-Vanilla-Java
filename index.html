@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fragure Films</title>
+    <script src="./nav.js" defer></script>
+    <script src="./index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <nav>
+        <figure class="logo__img--wrapper">
+          <img src="./assets/logo.png" alt="" class="logo__img" />
+        </figure>
+        <ul class="nav__link--list">
+          <li>
+            <a
+              href="./intro.html"
+              class="nav__link--anchor animation__underline"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav__link--anchor animation__underline click"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="./index.html"
+              class="nav__link--anchor nav__link--primary animation__underline"
+              >Movies</a
+            >
+          </li>
+        </ul>
+        <div class="menu">
+          <button
+            class="menu__button menu__button--open click"
+            onclick="menuOpen()"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu__background">
+            <button
+              class="menu__button menu__button--close click"
+              onclick="menuClose()"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__link--list">
+              <li class="menu__link">
+                <a
+                  onclick="menuClose()"
+                  href="./intro.html"
+                  class="menu__link--anchor animation__underline text-gradient"
+                  >Home</a
+                >
+              </li>
+              <li class="menu__link">
+                <a
+                  onclick="menuClose()"
+                  href="#"
+                  class="menu__link--anchor animation__underline click text-gradient"
+                  >Contact</a
+                >
+              </li>
+              <li class="menu__link">
+                <a
+                  onclick="menuClose()"
+                  href="./index.html"
+                  class="menu__link--anchor animation__underline text-gradient"
+                  >Movies</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div class="container">
+          <div class="row header__row">
+            <div class="head">
+              <h1 class="Header--title">
+                Browse Our <span class="text-gradient">Movies</span>
+              </h1>
+              <div class="search">
+                <input type="text" value="" class="search--input" />
+                <button class="search--button click pointer"
+                onclick="movieSearch()">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+            <h2 class="Search-result--text">Search results for  "<span class="search-result text-gradient"></span>"</h2>
+
+            <div class="search__movies">
+                <i class="fas fa-spinner"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+    <footer>
+      <div class="row footer__row">
+        <figure class="logo__img--wrapper footer__img--wrapper">
+          <img src="./assets/logo.png" alt="" class="logo__img" />
+        </figure>
+        <ul class="footer__link--list">
+          <li class="footer__link">
+            <a
+              href="./intro.html"
+              class="footer__link--anchor animation__underline animation__underline--white"
+              >Home</a
+            >
+          </li>
+          <li class="footer__link">
+            <a
+              href="#"
+              class="footer__link--anchor animation__underline animation__underline--white"
+              >Contact</a
+            >
+          </li>
+          <li class="footer__link">
+            <a
+              href="./index.html"
+              class="footer__link--anchor nav__link--primary animation__underline animation__underline--white"
+              >Movies</a
+            >
+          </li>
+        </ul>
+        <p class="copyright">copyright ©️ fragure films 20203</p>
+      </div>
+    </footer>
+  </body>
+</html>
